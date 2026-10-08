@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: routepilot
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DB_FILE
+        value: /var/data/routepilot.db
+    disk:
+      name: routepilot-data
+      mountPath: /var/data
+      sizeGB: 1
