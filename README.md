@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RoutePilot — Ready-to-Deploy Full Stack
 
 This package converts the RoutePilot single-file prototype into a Node/Express backend with SQLite persistence, JWT authentication, password hashing, password requests, contacts and audit logging. The original UI is kept in `index.html`.
@@ -46,6 +45,3 @@ The included `render.yaml` creates a Node web service and a 1 GB persistent disk
 - `POST /api/users/:id/password`
 
 The browser should call these endpoints with `Authorization: Bearer <token>` after login.
-=======
-# ROUTEPILOT
->>>>>>> 5dbba5b762458e7d0019eba25c26687389deff46
